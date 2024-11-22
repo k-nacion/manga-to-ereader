@@ -6,7 +6,7 @@
 ---
 ## Configurations
 ### Hakuneko
-![Hakuneko Configuration](attachments/Hakuneko Configuration.png)
+![Hakuneko Configuration]("attachments/Hakuneko Configuration.png")
 
 These settings in Hakuneko are all **optional**. You can configure your own settings. 
 **However**, in order for the CBZ Combiner to work,  the *Chapter File Format* must be set to *Comic Book Archive (*.cbz)*.
