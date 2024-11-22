@@ -1,133 +1,98 @@
-# Manga to E-Reader Tutorial
+# Manga to E-Reader Workflow Guide
 
-This tutorial will guide you through the process of downloading manga and transferring it to your e-reader device. Screenshots are included to help illustrate each step.
+This guide will walk you through the process of downloading manga and transferring it to your E-Reader device in a MOBI format. Below are the requirements, configurations, and detailed procedures to achieve this.
 
 ---
 
 ## Requirements
 
-- [Hakuneko](https://hakuneko.download/) — for downloading manga chapters in CBZ format.
-- [CBZ Combiner](https://github.com/k-nacion/cbz-combiner) — for combining multiple CBZ files.
-- [KCC Plugin](https://github.com/ciromattia/kcc?tab=readme-ov-file#prerequisites) — for converting CBZ files to MOBI format.
-- [Calibre](https://calibre-ebook.com/download) — for uploading MOBI files to your e-reader device.
+- **[Hakuneko](https://hakuneko.download/)**: For downloading manga chapters in CBZ format.
+- **[CBZ Combiner](https://github.com/k-nacion/cbz-combiner)**: For combining multiple CBZ files into a single CBZ.
+- **[KCC Plugin](https://github.com/ciromattia/kcc?tab=readme-ov-file#prerequisites)**: For converting CBZ files to MOBI format.
+- **[Calibre](https://calibre-ebook.com/download)**: For uploading the MOBI files to your E-Reader device.
 
 ---
 
 ## Configurations
 
-### Hakuneko
+### Hakuneko Configuration
 
 ![Hakuneko Configuration](attachments/Hakuneko%20Configuration.png)
 
-These settings in Hakuneko are all **optional**. You can configure your own settings. **However**, for CBZ Combiner to work, the *Chapter File Format* must be set to *Comic Book Archive (*.cbz)*.
+These settings in Hakuneko are optional, and you can configure them according to your preference.
+
+However, **for CBZ Combiner to work**, ensure that the *Chapter File Format* is set to:  
+**Comic Book Archive (*.cbz)**.
 
 ---
 
 ## Procedure
 
-### 1. Downloading Manga from Hakuneko
-1. Go to your manga website of choice (e.g., mangadex.org, mangafire.to). For this tutorial, we'll use Mangakatana.com.
-2. Find a manga you want to download. For example: [Jigokuraku (KAKU Yuuji)](https://mangakatana.com/manga/jigokuraku-kaku-yuuji.19894). Copy the URL of the manga.
-3. Open Hakuneko.
-4. Click the **Clipboard** option as shown below:
+### 1. Downloading Manga with Hakuneko
 
-   ![Hakuneko 1](attachments/Hakuneko%201.png)
+1. **Visit a manga website** (e.g., [Mangadex](https://mangadex.org), [Mangafire](https://mangafire.to)). For this guide, we’ll use [Mangakatana](https://mangakatana.com) as an example.
 
-5. Press the refresh button to load the link from the clipboard:
+2. **Select a manga** you want to download and copy its URL. Example: [Jigokuraku (KAKU Yuuji)](https://mangakatana.com/manga/jigokuraku-kaku-yuuji.19894).
 
-   ![Hakuneko 2](attachments/Hakuneko%202.png)
+3. Open **Hakuneko** and:
+   - Select the source.  ![Hakuneko Source](attachments/Hakuneko%201.png)
+   - Click the clipboard icon to paste the URL.  ![Hakuneko Clipboard](attachments/Hakuneko%202.png)
+   - Press the refresh button to load the manga link.  ![Hakuneko Refresh](attachments/Hakuneko%203.png)
 
-6. Download the manga chapters by following these steps:
-   - Click the manga to load the chapters in the right pane.
-   - Use the **Download** button to save all chapters or download specific chapters using the cloud icon.
-   - Bookmark the manga for easy access later.
+4. **Download chapters**:
+   - Click the manga to load its chapters.
+   - Use the download button to download all chapters, or select specific chapters by clicking the cloud icons.  ![Hakuneko Options](attachments/Hakuneko%204.png)
+   - Optionally, bookmark the manga for easy access later.
 
-   ![Hakuneko 3](attachments/Hakuneko%203.png)
-
-   ![Hakuneko 4](attachments/Hakuneko%204.png)
-
-   All downloaded files will be saved in your configured directory.
+All downloaded files will be saved to the directory configured in Hakuneko.
 
 ---
 
-### 2. Combining the CBZ Files
+### 2. Combining CBZ Files
 
-If the manga chapters are saved as multiple CBZ files, use CBZ Combiner to merge them.
+If you have multiple CBZ files and want to read seamlessly, use the **CBZ Combiner**.
 
-1. Open CBZ Combiner.
-2. Copy the directory containing the CBZ files.
-3. Set the maximum file size (recommended: 250 MB to ensure compatibility with KCC).
-4. The combined CBZ files will be generated in the **output/** directory.
+1. Open **CBZ Combiner**.
+2. Copy the directory containing the CBZ files for the manga.
+3. Set the maximum output file size (recommended: 250 MB). This ensures compatibility with the KCC plugin, which cannot process files larger than ~300 MB.
+4. The combiner will generate files in a new directory: `output/[manga_name]_[index].cbz`.
+5. You now have combined CBZ files ready for conversion.
 
 ---
 
 ### 3. Converting CBZ to MOBI
 
-To convert CBZ files to MOBI for e-readers:
+**Note**: The configuration below is a suggestion. Feel free to adjust settings in the KCC plugin to suit your needs.
 
-1. Open KCC.
+**Requirement**: Output file format must be MOBI or AZW3.
 
-   ![KCC 1](attachments/KCC%201.png)
+1. Open **KCC Plugin**.  
+   ![KCC Plugin](attachments/KCC%201.png)
 
-2. Drag and drop the combined CBZ files into KCC.
+2. Drag and drop the combined CBZ files into the app.  
+   ![Drag and Drop CBZ](attachments/KCC%202.png)
 
-   ![KCC 2](attachments/KCC%202.png)
+3. Click the **Convert** button to process the files.
 
-3. Press the **Convert** button. Once completed, the MOBI files will be ready.
+4. Once conversion is complete, you will have MOBI files ready for uploading to your E-Reader.
 
 ---
 
-### 4. Uploading MOBI to Your E-Reader
+### 4. Uploading MOBI Files to an E-Reader
 
-1. Open Calibre.
-
-   ![Calibre 1](attachments/Calibre%201.png)
-
+1. Open **Calibre**.  
 2. Drag and drop the MOBI files into Calibre.
-3. Connect your e-reader device via USB.
-4. Highlight the books to transfer and click **Send to device**.
-5. Enjoy reading manga on your e-reader!
+3. Connect your E-Reader device via USB.  
+   ![Connect Device](attachments/Calibre%201.png)
+
+4. Highlight the books you want to send.
+5. Click **Send to Device**.
+6. Your manga is now available to read on your E-Reader!
 
 ---
 
-## Notes
-- Ensure the CBZ file sizes do not exceed ~300 MB for compatibility with KCC.
-- Adjust configurations based on your preferences.
+## Additional Notes
 
----
+- Ensure you follow the order of steps for successful file conversion and transfer.
+- The screenshots are arranged sequentially to assist in each stage of the process.
 
-For any issues or suggestions, feel free to create an issue in this repository!
-
-All the downloaded files are stored in the directory where you configured this. 
-
-### Combining the CBZ files
-As you can see, there is a lot of CBZ files that was generated. And if you want to combine them for reading seamlessly, we can combine this with CBZ Combiner. 
-
-1. Open the CBZ Combiner. 
-2. Copy the directory of the manga that contains the CBZ files.
-3. CBZ Combiner will ask for the maximum file size to be generated.
-   Why? because the KCC plugin is only capable of maximum ~300 mb and cannot process more than that. I usually go for 250 MB limit.  
-4. This will generate a directory relative to the CBZ Combiner current directory. It will generate **output/[manga_name]_[index].cbz**. depending on how many output files will be generated. 
-5. Now that you have a combined CBZ files, we can proceed to convert the CBZ file to MOBI format. 
-
-### Converting CBZ to MOBI
-Note: the configuration are just a suggestion for the KCC. You can absolutely modify the configurations that was set here to your liking. 
-
-**Requirement**:
-- File format must be a MOBI./AZW3 to produce a MOBI format. 
-
-1. Open up the KCC plugin. 
-   ![[KCC 1.png]]
-2. Drag and drop the CBZ files that was generated to this KCC app. 
-   ![[KCC 2.png]]
-3. Press the **Convert** button. 
-4. Once completed, we can upload these MOBI generated file to your E-Reader device. 
-
-### Uploading MOBI to E-Reader device. 
-1. Open up Calibre.
-2. Drag and drop the MOBI files to the Calibre app. 
-3. Connect your E-Reader device to your computer via USB. 
-![[Calibre 1.png]]
-4. Highlight the books that you wanted to send. 
-5. Press the "Send to device". 
-6. That's it! You can now read the books/manga in your E-reader device. 
