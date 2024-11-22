@@ -35,8 +35,9 @@ However, **for CBZ Combiner to work**, ensure that the *Chapter File Format* is 
 2. **Select a manga** you want to download and copy its URL. Example: [Jigokuraku (KAKU Yuuji)](https://mangakatana.com/manga/jigokuraku-kaku-yuuji.19894).
 
 3. Open **Hakuneko** and:
-   - Select the source.  ![Hakuneko Source](attachments/Hakuneko%201.png)
-   - Click the clipboard icon to paste the URL.  ![Hakuneko Clipboard](attachments/Hakuneko%202.png)
+   - Select the source.  
+     ![Hakuneko Source](attachments/Hakuneko%201.png)
+   - Click the [Clipboard] as the source.  ![Hakuneko Clipboard](attachments/Hakuneko%202.png)
    - Press the refresh button to load the manga link.  ![Hakuneko Refresh](attachments/Hakuneko%203.png)
 
 4. **Download chapters**:
